@@ -672,7 +672,7 @@ private void performInitialization() {
     new Thread(() -> {
         try {
             // 模拟任务，例如读取配置或初始化操作
-            Thread.sleep(2000); // 模拟任务耗时
+            Thread.sleep(0000); // 模拟任务耗时
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
