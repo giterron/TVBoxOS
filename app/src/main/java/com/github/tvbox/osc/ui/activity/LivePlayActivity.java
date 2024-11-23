@@ -659,10 +659,14 @@ public class LivePlayActivity extends BaseActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if (mVideoView != null) {
-            mVideoView.release();
-            mVideoView = null;
-        }
+        // if (mVideoView != null) {
+            // mVideoView.release();
+           // mVideoView = null;
+       // }
+
+        // 退出应用时，结束所有 Activity
+    finishAffinity(); // 结束当前任务栈
+    System.exit(0);   // 彻底退出应用
     }
 
     private void showChannelList() {
